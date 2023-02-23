@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useRef } from 'react';
-import { Form, Button, Card } from 'react-bootstrap';
 
 const Signup = () => {
   const emailRef = useRef()
@@ -9,30 +8,28 @@ const Signup = () => {
 
   return (
     <>
-      <Card className='card'>
-        <Card.Body>
+      <div className='card'>
           <h1 className='section__title'>Sign Up</h1>
-        </Card.Body>
-        <Form className='card-main'>
-          <Form.Group id='email'>
-            <Form.Label className='form-label'>Email</Form.Label> <br />
-            <Form.Control className='form-input' type='email' ref={emailRef}></Form.Control>
-          </Form.Group>
-          <Form.Group id='password'>
-            <Form.Label className='form-label'>Password</Form.Label> <br />
-            <Form.Control className='form-input' type='password' ref={passwordRef}></Form.Control>
-          </Form.Group>
-          <Form.Group id='password-confirm'>
-            <Form.Label className='form-label'>Password Confirmation</Form.Label> <br />
-            <Form.Control className='form-input' type='password' ref={passwordConfirmRef}></Form.Control>
-          </Form.Group>
-          <Button className='card-button' type='submite'>Sign Up</Button>
+        <div className='card-main'>
+          <div id='email'>
+            <label className='form-label'>Email</label> <br />
+            <input className='form-input' type='email' ref={emailRef} />
+          </div>
+          <div id='password'>
+            <label className='form-label'>Password</label> <br />
+            <input className='form-input' type='password' ref={passwordRef} />
+          </div>
+          <div id='password-confirm'>
+            <label className='form-label'>Password Confirmation</label> <br />
+            <input className='form-input' type='password' ref={passwordConfirmRef} />
+          </div>
+          <button className='card-button' type='submite'>Sign Up</button>
           <hr />
           <div className='card-text'>
-            Already have an account? Log In
+            Already have an account? <a href="#">Login</a>
           </div>
-        </Form>
-      </Card>
+        </div>
+      </div>
 
     </>
   )
