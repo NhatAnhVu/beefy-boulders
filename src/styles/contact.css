@@ -1,0 +1,32 @@
+/* CONTACT */
+
+.contact__bg {
+  background-image: url('../images/310308006_429320269312673_4659954659652867651_n.jpg');
+  height: 10vh;
+}
+
+.contact__section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.contact__section--info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__section--info--hours {
+  flex: 2;
+}
+
+.contact__section--info--address {
+  flex: 1;
+}
+
+@media (max-width: 800px) {
+  iframe {
+    width: 95%;
+  }
+}

@@ -1,8 +1,8 @@
 import React from 'react';
-import BoulderingClass from '../About/images/310890978_423026109942089_6317256234631878400_n.jpg';
-import HangingMan from '../About/images/312974095_438766678368032_6369865977378490562_n.jpg';
-import { rulesData } from './rulesData';
-import { descData } from './descData';
+import BoulderingClass from '../../images/310890978_423026109942089_6317256234631878400_n.jpg';
+import HangingMan from '../../images/312974095_438766678368032_6369865977378490562_n.jpg';
+import { rulesData } from '../../data/rulesData';
+import { descData } from '../../data/descData';
 import Paragraph from './Paragraph';
 import FAQ from './FAQ';
 

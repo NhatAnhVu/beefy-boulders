@@ -1,7 +1,7 @@
 import React from 'react';
 import Course from './Course';
-import {classesData} from './classesData';
-import { eventsData } from './eventsData';
+import {classesData} from '../../data/classesData';
+import { eventsData } from '../../data/eventsData';
 
 const ClassesAndEvents = () => {
   return (

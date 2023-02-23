@@ -1,0 +1,44 @@
+/* ACCOUNT */
+
+.account__bg {
+  background-image: url("../images/637f83bd1be00c371803a700_PANA4971-p-500.jpeg");
+  height: 10vh;
+}
+
+.card {
+  background-color: var(--clr-light);
+  margin: 1em auto;
+  width: 95%;
+  max-width: 500px;
+  padding: 1em;
+  border-radius: 10px;
+  font-size: var(--fs-h4);
+  box-shadow: var(--box-shadow);
+}
+
+.card-button {
+  width: 100%;
+  border-radius: 5px;
+  background-color: var(--clr-click);
+  border: none;
+  padding: 0.5em;
+  color: var(--clr-light);
+  font-size: var(--fs-h4);
+  cursor: pointer;
+}
+
+.form-input {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  border: 1px solid var(--clr-grey);
+  padding: 0.6em;
+}
+
+.card-text {
+  text-align: center;
+  font-size: var(--fs-body);
+  margin-top: 1em;
+  color: var(--clr-grey);
+}

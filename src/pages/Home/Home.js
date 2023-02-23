@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import { benefitsData } from './benefitsData';
+import { benefitsData } from '../../data/benefitsData';
 import Benefit from './Benefit';
 import Review from './Review';
 

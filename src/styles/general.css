@@ -1,0 +1,36 @@
+/* GENERAL STYLING */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--fs-body);
+  background-color: rgb(242, 243, 237);
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+
+.section {
+  width: 80%;
+  margin: 2em auto;
+}
+
+.bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 800px) {
+  .section {
+    width: 90%;
+  }
+}

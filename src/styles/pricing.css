@@ -1,0 +1,60 @@
+/* PRICING */
+
+.pricing__bg {
+  background-image: url('../images/309502854_426894132888620_3729173512353582509_n.jpg');
+  height: 10vh;
+}
+
+.pricing {
+  position: relative;
+}
+
+.pricing__section--prices {
+  display: flex;
+  align-items: center;
+  background-color: darkblue;
+  border-radius: 10px;
+  padding: 2em;
+  margin-top: 2em;
+  gap: 1em
+}
+
+.pricing__section--price {
+  flex: 1;
+  background-color: var(--clr-light);
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.pricing__section--price-title {
+  text-align: center;
+}
+
+.pricing__section--price-title h4{
+  color: var(--clr-click);
+}
+
+.check-icon {
+  color: var(--clr-click);
+}
+
+.pricing__section--discount-and-rental {
+  padding-top: 1em;
+  text-align: center;
+}
+
+.pricing__section--course {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('../images/288642503_366451305583716_5063898189780198044_n.jpg');
+  height: 60vh;
+  color: var(--clr-light);
+  text-align: center;
+  padding: 10em 5em ;
+}
+
+@media (max-width: 800px) {
+  .pricing__section--prices {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
