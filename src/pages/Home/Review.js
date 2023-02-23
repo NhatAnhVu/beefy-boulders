@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { reviewsData } from './reviewsData';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Review = () => {
   const [index, setIndex] = useState(0);
@@ -27,6 +27,18 @@ const Review = () => {
       return checkNumber(newIndex);
     });
   };
+
+  useEffect(() => {
+    let slider = setInterval(() => {
+      setIndex((index) => {
+        let newIndex = index + 1;
+        return checkNumber(newIndex);
+      });
+    }, 4000);
+    return () => {
+      clearInterval(slider);
+    };
+  }, [index]);
 
   return (
     <article className='review'>

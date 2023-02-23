@@ -5,7 +5,6 @@ import Page from './Page';
 
 const Account = () => {
   return (
-
       <div className="account">
         <div className="account__bg bg"></div>
         <div className="account__section section">
