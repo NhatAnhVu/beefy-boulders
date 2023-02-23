@@ -5,7 +5,7 @@ const Contact = () => {
     <section className='contact'>
       <div className="contact__bg bg"></div>
       <div className="contact__section section">
-        <h1 className="section__title">Come And Join With Us</h1>
+        <h1 className="section__title">Come And Join</h1>
         <div className="contact__section--info">
           <div className="contact__section--info--hours">
             <h3>Opening Hours</h3>
