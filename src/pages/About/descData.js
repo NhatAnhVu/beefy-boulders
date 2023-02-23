@@ -1,0 +1,5 @@
+export const descData = [
+  "One of the common misconceptions is that climbing is a dangerous sport. Bouldering is a specific discipline of climbing where climbers usually climb no higher than 4.5m. There is no need for ropes since the falling area is a large foam mat that catches the climbers when they land.",
+  "Unlike most sports, climbing is an individual sport. There is no requirement for teams, or even a playing partner. The challenge is you against the wall. This allows you to climb with others in a very fun, cooperative environment. You can boulder alone or with friends. The experience is fun either way!",
+  "We see people form new friendships daily in the gym as they work on the climbs throughout the gym. The sport is truly a unique experience and it is no wonder why it is so rapidly growing in popularity."
+]
