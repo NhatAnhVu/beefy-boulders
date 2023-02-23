@@ -1,27 +1,22 @@
-import React, { useState } from 'react';
-import { useRef } from 'react';
+import React from 'react';
 
 const Signup = () => {
-  const emailRef = useRef()
-  const passwordRef = useRef()
-  const passwordConfirmRef = useRef()
 
   return (
-    <>
       <div className='card'>
           <h1 className='section__title'>Sign Up</h1>
         <div className='card-main'>
           <div id='email'>
             <label className='form-label'>Email</label> <br />
-            <input className='form-input' type='email' ref={emailRef} />
+            <input className='form-input' type='email' />
           </div>
           <div id='password'>
             <label className='form-label'>Password</label> <br />
-            <input className='form-input' type='password' ref={passwordRef} />
+            <input className='form-input' type='password' />
           </div>
           <div id='password-confirm'>
             <label className='form-label'>Password Confirmation</label> <br />
-            <input className='form-input' type='password' ref={passwordConfirmRef} />
+            <input className='form-input' type='password' />
           </div>
           <button className='card-button' type='submite'>Sign Up</button>
           <hr />
@@ -30,8 +25,6 @@ const Signup = () => {
           </div>
         </div>
       </div>
-
-    </>
   )
 }
 
