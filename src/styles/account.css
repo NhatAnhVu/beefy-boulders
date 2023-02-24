@@ -16,6 +16,19 @@
   box-shadow: var(--box-shadow);
 }
 
+.card-noti {
+  text-align: center;
+  background-color: lightcoral;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em;
+  color: var(--clr-light);
+}
+
+.success {
+  background-color: lightseagreen;
+}
+
 .card-button {
   width: 100%;
   border-radius: 5px;

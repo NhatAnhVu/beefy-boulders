@@ -9,25 +9,33 @@ import Pricing from './pages/Pricing/Pricing';
 import ClassesAndEvents from './pages/Classes&Events/ClassesAndEvents';
 import Contant from './pages/Contact';
 import Account from './pages/Account/Account';
-
+import Error from './pages/Error';
+import Signup from './pages/Account/Signup';
+import Login from './pages/Account/Login';
+import PrivateRoutes from './components/PrivateRoutes';
 
 function App() {
 
   return (
-      <Router>
-        <Navbar />
-        <ScrollToTop>
-          <Routes>
-            <Route path='/' exact element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/pricing' element={<Pricing />} />
-            <Route path='/classesevents' element={<ClassesAndEvents />} />
-            <Route path='/contact' element={<Contant />} />
+    <Router>
+      <Navbar />
+      <ScrollToTop>
+        <Routes>
+          <Route path='/' exact element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/pricing' element={<Pricing />} />
+          <Route path='/classesevents' element={<ClassesAndEvents />} />
+          <Route path='/contact' element={<Contant />} />
+          <Route element={<PrivateRoutes />}>
             <Route path='/account' element={<Account />} />
-          </Routes>
-        </ScrollToTop>
-        <Footer/>
-      </Router>
+          </Route>
+          <Route path='/signup' element={<Signup />} />
+          <Route path='/login' element={<Login />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </ScrollToTop>
+      <Footer />
+    </Router>
   );
 }
 
