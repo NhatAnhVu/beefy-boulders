@@ -19,12 +19,19 @@ const Account = () => {
       })
   }
 
+  const user = auth.currentUser;
+  const displayName = user.displayName
+
   return (
     <div className="account">
       <div className="account__bg bg"></div>
       <div className="account__section section">
-        {error && <h4 className='card-noti'>{error}</h4>}
-        <button onClick={handleLogOut}>Log Out</button>
+        <div className="account__card card">
+          <h4>{`Hello ${displayName}`}!</h4>
+          <p>Sorry! We are still working for this feature</p>
+          {error && <h4 className='card-noti'>{error}</h4>}
+          <button className='card-button' onClick={handleLogOut}>Log Out</button>
+        </div>
       </div>
     </div>
   )

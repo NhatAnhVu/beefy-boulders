@@ -1,11 +1,11 @@
 import React, { useState, useRef } from 'react';
 import { auth } from '../../firebase';
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { Link } from 'react-router-dom';
 
 const Signup = () => {
-
   const email = useRef()
+  const name = useRef()
   const password = useRef()
   const passwordConfirm = useRef()
   const [error, setError] = useState("")
@@ -20,6 +20,9 @@ const Signup = () => {
 
     createUserWithEmailAndPassword(auth, email.current.value, password.current.value)
       .then((userCredential) => {
+        updateProfile(userCredential.user, {
+          displayName: name.current.value
+        })
         setError("")
         setSuccess(true)
         setLoading(true)
@@ -41,9 +44,13 @@ const Signup = () => {
       <div className="account__section section">
         <div className='card'>
           {error && <h4 className='card-noti'>{error}</h4>}
-          {success && <h4 className='card-noti success'>Account Successfully Created! Please {<Link style={{color: "black"}} to="/login">Login</Link>}</h4>}
+          {success && <h4 className='card-noti success'>Account Successfully Created! Please {<Link style={{ color: "black" }} to="/login">Login</Link>}</h4>}
           <h1 className='section__title'>Sign Up</h1>
           <form className='card-main' onSubmit={handleSignup}>
+            <div id='name'>
+              <label className='form-label'>Full Name</label> <br />
+              <input className='form-input' type='text' ref={name} required />
+            </div>
             <div id='email'>
               <label className='form-label'>Email</label> <br />
               <input className='form-input' type='email' ref={email} required />

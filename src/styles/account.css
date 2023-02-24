@@ -55,3 +55,8 @@
   margin-top: 1em;
   color: var(--clr-grey);
 }
+
+.account__card {
+  display: flex;
+  flex-direction: column;
+}
