@@ -18,16 +18,14 @@ const Account = () => {
         console.log(err.message)
       })
   }
-
-  const user = auth.currentUser;
-  const displayName = user.displayName
+  const name = localStorage.getItem("displayName")
 
   return (
     <div className="account">
       <div className="account__bg bg"></div>
       <div className="account__section section">
         <div className="account__card card">
-          <h4>{`Hello ${displayName}`}!</h4>
+          <h4>{`Hello ${name}`}!</h4>
           <p>Sorry! We are still working for this feature</p>
           {error && <h4 className='card-noti'>{error}</h4>}
           <button className='card-button' onClick={handleLogOut}>Log Out</button>

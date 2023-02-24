@@ -3,7 +3,7 @@ import { auth } from '../../firebase';
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { Link, useNavigate } from 'react-router-dom';
 
-const Login = ( ) => {
+const Login = () => {
   const email = useRef()
   const password = useRef()
   const [error, setError] = useState("")
@@ -15,8 +15,11 @@ const Login = ( ) => {
     signInWithEmailAndPassword(auth, email.current.value, password.current.value)
       .then(userCredential => {
         navigate("/account")
+        const user = userCredential.user;
+        const displayName = user.displayName
+        localStorage.setItem("displayName", displayName)
       })
-      .catch(err  => {
+      .catch(err => {
         setError("Incorrect Email or Password")
         console.log(err.code)
       })
@@ -27,7 +30,7 @@ const Login = ( ) => {
       <div className="account__bg bg"></div>
       <div className="account__section section">
         <div className='card'>
-        {error && <h4 className='card-noti'>{error}</h4>}
+          {error && <h4 className='card-noti'>{error}</h4>}
           <h1 className='section__title'>Login</h1>
           <form className='card-main' onSubmit={handleLogin}>
             <div id='email'>
