@@ -12,6 +12,7 @@ const Account = () => {
     signOut(auth).then(() => {
       setError("")
       navigate("/login")
+      localStorage.removeItem("displayName")
     })
       .catch(err => {
         setError("Something Wrong!")
