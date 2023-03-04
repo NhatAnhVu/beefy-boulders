@@ -15,7 +15,7 @@ Users should be able to:
 
 
 ### Screenshot
-![My Image](images/screenshot.png)
+![My Image](../images/screenshot.png)
 
 ### Links
 
