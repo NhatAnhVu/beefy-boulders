@@ -15,7 +15,8 @@ Users should be able to:
 
 
 ### Screenshot
-![Screenshot](../beefy-boulders/src/images/screenshot.png)
+![screenshot](https://user-images.githubusercontent.com/126160990/222886505-2ad8fcce-53af-4ac5-b37f-93d17b8bd451.png)
+
 
 ### Links
 
