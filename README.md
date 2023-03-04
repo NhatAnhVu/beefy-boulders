@@ -39,4 +39,9 @@ Users should be able to:
   + interactive F.A.Q section
   + Signup and Login with Firebase
 - Learn CSS skills to make user-friendlly interface
+- Learn to manage files and folders structure for a project
 - How to use Firebase with the project (Signup and login feature)
+
+### Continue development
+
+- Add features for users after login
